@@ -1239,7 +1239,7 @@ for j = 1:length(L)
             % single region 2D alpha shape
             metrics.ConcaveHull2D = repmat({nan}, n_obs, 1); % cell(n_obs,1);
             
-            for k = find(metrics.NPoints > 2) %1:n_obs
+            for k = find(metrics.NPoints > 2)' %1:n_obs
                 
                 try
                     
@@ -1263,7 +1263,7 @@ for j = 1:length(L)
             % single region 3D alpha shape
             metrics.ConcaveHull3D = repmat({nan}, n_obs, 1); % cell(n_obs,1);
             
-            for k = find(metrics.NPoints > 3) %1:n_obs
+            for k = find(metrics.NPoints > 3)' %1:n_obs
                 
                 try
                     
